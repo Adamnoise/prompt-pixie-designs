@@ -16,10 +16,10 @@ const Index = () => {
           className="container mx-auto px-4 text-center"
         >
           <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-700">
-            Design Quality Matters
+            A tervezési minőség számít
           </h1>
           <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-            See how the same feature can be built with different levels of design sophistication.
+            Nézd meg, hogyan épülhet fel ugyanaz a funkció különböző tervezési minőségi szinteken.
           </p>
         </motion.div>
       </header>
@@ -41,7 +41,7 @@ const Index = () => {
 
       <footer className="py-8 bg-gray-50 border-t border-gray-100">
         <div className="container mx-auto px-4 text-center text-gray-500 text-sm">
-          <p>Designed to showcase the impact of design quality on user experience.</p>
+          <p>Tervezve a tervezési minőség felhasználói élményre gyakorolt hatásának bemutatására.</p>
         </div>
       </footer>
     </div>

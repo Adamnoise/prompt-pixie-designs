@@ -17,11 +17,11 @@ const PricingShowcase = () => {
       >
         <div className="flex flex-col items-center mb-12">
           <h1 className="text-3xl md:text-4xl font-bold text-center mb-6">
-            Pricing Quality Showcase
+            Árazási lehetőségek bemutatása
           </h1>
           <p className="text-muted-foreground text-center max-w-2xl mb-8">
-            Visualize how design sophistication transforms user experience through three iterations
-            of a pricing page, from basic to professional quality.
+            Figyeld meg, hogyan alakítja át a tervezési minőség a felhasználói élményt három különböző
+            árazási oldal-változaton keresztül, az alapvetőtől a professzionális minőségig.
           </p>
           
           <TabsList className="grid grid-cols-3 w-full max-w-md">
@@ -29,19 +29,19 @@ const PricingShowcase = () => {
               value="1" 
               className={`rounded-l-md ${activeIteration === '1' ? 'bg-primary text-white' : ''}`}
             >
-              1. Basic
+              1. Alap
             </TabsTrigger>
             <TabsTrigger 
               value="2" 
               className={activeIteration === '2' ? 'bg-primary text-white' : ''}
             >
-              2. Standard
+              2. Normál
             </TabsTrigger>
             <TabsTrigger 
               value="3" 
               className={`rounded-r-md ${activeIteration === '3' ? 'bg-primary text-white' : ''}`}
             >
-              3. Professional
+              3. Professzionális
             </TabsTrigger>
           </TabsList>
         </div>
@@ -58,11 +58,11 @@ const PricingShowcase = () => {
             <TabsContent value="1" className="w-full mt-0">
               <div className="border border-gray-200 rounded-lg p-6 mb-6">
                 <p className="text-sm text-gray-600 mb-4">
-                  <strong>Task:</strong> Create a pricing page with three different packages.
+                  <strong>Feladat:</strong> Készíts egy árazási oldalt három különböző csomaggal.
                 </p>
                 <div className="flex items-center justify-center">
                   <div className="h-2 w-2 rounded-full bg-green-500 mr-2"></div>
-                  <p className="text-sm text-gray-600">Basic Design Quality</p>
+                  <p className="text-sm text-gray-600">Alap tervezési minőség</p>
                 </div>
               </div>
               <PricingTabs iteration="1" />
@@ -71,14 +71,14 @@ const PricingShowcase = () => {
             <TabsContent value="2" className="w-full mt-0">
               <div className="border border-gray-200 rounded-lg p-6 mb-6">
                 <p className="text-sm text-gray-600 mb-4">
-                  <strong>Task:</strong> Create a pricing page with three packages (Basic, Pro, Enterprise).
-                  The Basic package is €9/month, Pro is €19/month, and Enterprise is €49/month. Each package 
-                  should have a "Most Popular" label on the Pro tier. Also add a comparison table below 
-                  the packages that details the features.
+                  <strong>Feladat:</strong> Készíts egy árazási oldalt három csomaggal (Alap, Pro, Vállalati).
+                  Az Alap csomag legyen 9€/hó, a Pro 19€/hó, a Vállalati pedig 49€/hó. Minden csomagnál legyen egy 
+                  "Leggyakrabban választott" jelölés a Pro csomagnál. Adj hozzá egy összehasonlító táblázatot is 
+                  a csomagok alatt, amely részletezi a funkciókat.
                 </p>
                 <div className="flex items-center justify-center">
                   <div className="h-2 w-2 rounded-full bg-yellow-500 mr-2"></div>
-                  <p className="text-sm text-gray-600">Standard Design Quality</p>
+                  <p className="text-sm text-gray-600">Normál tervezési minőség</p>
                 </div>
               </div>
               <PricingTabs iteration="2" />
@@ -87,15 +87,15 @@ const PricingShowcase = () => {
             <TabsContent value="3" className="w-full mt-0">
               <div className="border border-gray-200 rounded-lg bg-gradient-to-b from-white to-gray-50 shadow-sm p-6 mb-6">
                 <p className="text-sm text-gray-700 mb-4">
-                  <strong>Task:</strong> Create a pricing page with three packages (Basic, Pro, Enterprise). 
-                  Use a blue gradient background with rounded corners and subtle shadows. The Pro package should 
-                  stand out with highlighted borders. Add a toggle for monthly/annual billing with a 10% discount 
-                  for annual plans. Include "Try for free" buttons and clear feature lists for each package. 
-                  Make it responsive and add smooth animations.
+                  <strong>Feladat:</strong> Készíts egy árazási oldalt három csomaggal (Alap, Pro, Vállalati).
+                  Használj kék színátmenetes hátteret lekerekített sarkokkal és finom árnyékokkal. A Pro csomag emelkedjen 
+                  ki kiemelt szegéllyel. Legyen váltógomb a havi/éves számlázás között, 10% kedvezménnyel az éves csomagokra. 
+                  Tartalmazza a "Próbáld ki ingyen" gombokat és áttekinthető funkciólista minden csomaghoz. 
+                  Legyen reszponzív és tartalmazzon finom animációkat.
                 </p>
                 <div className="flex items-center justify-center">
                   <div className="h-2 w-2 rounded-full bg-blue-500 mr-2"></div>
-                  <p className="text-sm text-gray-700">Professional Design Quality</p>
+                  <p className="text-sm text-gray-700">Professzionális tervezési minőség</p>
                 </div>
               </div>
               <PricingTabs iteration="3" />
